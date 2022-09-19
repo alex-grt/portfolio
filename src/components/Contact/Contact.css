@@ -1,0 +1,26 @@
+.contact-link {
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity .4s;
+}
+
+.contact-link:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.contact {
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #995d54;
+}
+
+.contact__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}

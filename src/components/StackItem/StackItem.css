@@ -1,0 +1,32 @@
+.stack-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #909c96;
+}
+
+.stack-item_theme_normal {
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 14px;
+}
+
+.stack-item_theme_small {
+  height: 20px;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.stack-item__name {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.stack-item__name_theme_normal {
+  font-size: 16px;
+}
+
+.stack-item__name_theme_small {
+  font-size: 12px;
+}
