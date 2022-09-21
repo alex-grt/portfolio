@@ -5,6 +5,12 @@ import stellarBurgers from '../images/stellar-burgers.jpg';
 import moviesExplorer from '../images/movies-explorer.jpg';
 import mesto from '../images/mesto.jpg';
 import russianTravel from '../images/russian-travel.jpg';
+import moviesMain from '../images/movies-explorer/movies-main.png';
+import moviesRegistration from '../images/movies-explorer/movies-registration.png';
+import moviesLogin from '../images/movies-explorer/movies-login.png';
+import moviesAllMovies from '../images/movies-explorer/movies-allMovies.png';
+import moviesSavedMovies from '../images/movies-explorer/movies-savedMovies.png';
+import moviesProfile from '../images/movies-explorer/movies-profile.png';
 
 export const stack: string[] = [
   'React',
@@ -78,10 +84,41 @@ export const projectsData: IProjectData[] = [
       'HTML',
       'CSS'
     ],
-    link: '',
     image: moviesExplorer,
     linkCode: 'https://github.com/alex-grt/movies-explorer-frontend',
-    imageCode: imageCode
+    imageCode: imageCode,
+    screenshots: [
+      {
+        index: 1,
+        name: 'Главная страница',
+        screenshot: moviesMain
+      },
+      {
+        index: 2,
+        name: 'Страница регистрации',
+        screenshot: moviesRegistration
+      },
+      {
+        index: 3,
+        name: 'Страница входа',
+        screenshot: moviesLogin
+      },
+      {
+        index: 4,
+        name: 'Все фильмы',
+        screenshot: moviesAllMovies
+      },
+      {
+        index: 5,
+        name: 'Сохранённые фильмы',
+        screenshot: moviesSavedMovies
+      },
+      {
+        index: 6,
+        name: 'Страница профиля',
+        screenshot: moviesProfile
+      }
+    ]
   },
   {
     index: 4,

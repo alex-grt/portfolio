@@ -1,19 +1,26 @@
 export interface IProject {
-  name: string;
+  readonly name: string;
 }
 
 export interface IContact {
-  index: number;
-  title: string;
-  link: string;
+  readonly index: number;
+  readonly title: string;
+  readonly link: string;
+}
+
+export interface IScreenshot {
+  readonly index: number;
+  readonly name: string;
+  readonly screenshot: string;
 }
 
 export interface IProjectData {
-  index: number,
-  name: string,
-  stack: string[],
-  link: string,
-  image: string,
-  linkCode: string,
-  imageCode: string;
+  readonly index: number;
+  readonly name: string;
+  readonly stack: string[];
+  readonly link?: string;
+  readonly image: string;
+  readonly linkCode: string;
+  readonly imageCode: string;
+  readonly screenshots?: IScreenshot[];
 }

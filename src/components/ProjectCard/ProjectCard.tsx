@@ -1,13 +1,19 @@
 import './ProjectCard.css';
 import { FC, MouseEvent, useRef } from 'react';
-import { IProjectData } from '../../utils/types';
+import { IProjectData, IScreenshot } from '../../utils/types';
 import StackItem from '../StackItem/StackItem';
 
 interface IProjectCardProps {
   data: IProjectData;
+  onOpen?: () => void;
+  setScreenshots?: (data: IScreenshot[]) => void;
 }
 
-const ProjectCard: FC<IProjectCardProps> = ({ data }) => {
+const ProjectCard: FC<IProjectCardProps> = ({
+  data,
+  onOpen,
+  setScreenshots
+}) => {
   const cardRef = useRef<HTMLDivElement & HTMLLIElement>(null);
   const coverRef = useRef<HTMLDivElement>(null);
   const thumbRef = useRef<HTMLDivElement>(null);
@@ -58,7 +64,14 @@ const ProjectCard: FC<IProjectCardProps> = ({ data }) => {
 
     thumbRef.current.style.left = rightEdge / 2 + 'px';
     coverRef.current.style.width = rightEdge / 2 + 'px';
-  }
+  };
+
+  function openModal() {
+    if (data.screenshots) {
+      onOpen!();
+      setScreenshots!(data.screenshots);
+    };
+  };
 
   return (
     <>
@@ -117,7 +130,11 @@ const ProjectCard: FC<IProjectCardProps> = ({ data }) => {
               alt="изображение кода"
             />
           </a>
-          <div className="project-card__cover" ref={coverRef}>
+          <div
+            className="project-card__cover"
+            ref={coverRef}
+            onClick={openModal}
+          >
             <a
               href={data.link}
               className="project-card__link"
