@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.cd1c283b.css",
+    "main.js": "/portfolio/static/js/main.5a0f8632.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/movies-main.png": "/portfolio/static/media/movies-main.7977b47f0622d21c3abf.png",
+    "static/media/movies-allMovies.png": "/portfolio/static/media/movies-allMovies.c0e293090ededf54d523.png",
+    "static/media/movies-savedMovies.png": "/portfolio/static/media/movies-savedMovies.c502601c1d2c238b26df.png",
+    "static/media/Inter-Bold.woff?v=3.19": "/portfolio/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
+    "static/media/Inter-Medium.woff?v=3.19": "/portfolio/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Regular.woff?v=3.19": "/portfolio/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Neucha-Regular.ttf": "/portfolio/static/media/Neucha-Regular.543eb5219232aab34519.ttf",
+    "static/media/Inter-Bold.woff2?v=3.19": "/portfolio/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
+    "static/media/Inter-Medium.woff2?v=3.19": "/portfolio/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Regular.woff2?v=3.19": "/portfolio/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/code.jpg": "/portfolio/static/media/code.4061afb4ef7b0b10d4da.jpg",
+    "static/media/mesto.jpg": "/portfolio/static/media/mesto.b2cdc9e5fd45f51f0f2c.jpg",
+    "static/media/russian-travel.jpg": "/portfolio/static/media/russian-travel.16f1e59c71b4e1fbe4ba.jpg",
+    "static/media/stellar-burgers.jpg": "/portfolio/static/media/stellar-burgers.1b7eff9045355e076025.jpg",
+    "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.57e26831657d2cd957c5.jpg",
+    "static/media/movies-profile.png": "/portfolio/static/media/movies-profile.20a1aef84f4069c55848.png",
+    "static/media/movies-registration.png": "/portfolio/static/media/movies-registration.7235acacbc80d3f990bd.png",
+    "static/media/movies-login.png": "/portfolio/static/media/movies-login.446a5c3883e852ca5b64.png",
+    "static/media/photo.jpg": "/portfolio/static/media/photo.b220b78ed65d2cbb083a.jpg",
+    "static/media/movies-explorer.jpg": "/portfolio/static/media/movies-explorer.596497d2ef9bf59bebf3.jpg",
+    "index.html": "/portfolio/index.html",
+    "static/media/arrow-previous.svg": "/portfolio/static/media/arrow-previous.261bd11814dff5621f00.svg",
+    "static/media/arrow-next.svg": "/portfolio/static/media/arrow-next.4a2958c534395daa6ad5.svg",
+    "static/media/close.svg": "/portfolio/static/media/close.eb5d3e966bdb416cf9be.svg",
+    "main.cd1c283b.css.map": "/portfolio/static/css/main.cd1c283b.css.map",
+    "main.5a0f8632.js.map": "/portfolio/static/js/main.5a0f8632.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd1c283b.css",
+    "static/js/main.5a0f8632.js"
+  ]
+}
