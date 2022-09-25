@@ -164,3 +164,43 @@
   background-color: #995d54;
   box-shadow: 0 0 4px 2px #995d54;
 }
+
+@media screen and (max-width: 479px) {
+  .modal__close {
+    width: 18px;
+    height: 18px;
+    top: -22px;
+    right: -22px;
+  }
+
+  .modal__selector {
+    width: 20px;
+  }
+
+  .modal__arrow {
+    width: 16px;
+  }
+
+  .modal__field {
+    width: calc(80vw - 40px);
+    padding: 4px 0;
+  }
+
+  .modal__cover {
+    height: calc(100% - 52px);
+  }
+
+  .modal__image-name {
+    margin: 6px 0;
+    font-size: 12px;
+  }
+
+  .modal__indicator {
+    padding: 8px;
+  }
+
+  .modal__dot {
+    width: 10px;
+    height: 10px;
+  }
+}

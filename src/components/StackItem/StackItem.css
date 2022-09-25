@@ -30,3 +30,27 @@
 .stack-item__name_theme_small {
   font-size: 12px;
 }
+
+@media screen and (max-width: 1279px) {
+  .stack-item_theme_normal {
+    height: 30px;
+    border-radius: 15px;
+    padding: 0 10px;
+  }
+
+  .stack-item__name_theme_normal {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .stack-item_theme_normal {
+    height: 20px;
+    border-radius: 10px;
+    padding: 0 10px;
+  }
+
+  .stack-item__name_theme_normal {
+    font-size: 12px;
+  }
+}

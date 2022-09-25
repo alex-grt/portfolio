@@ -1,4 +1,4 @@
-.info__cover {
+.info__person {
   display: flex;
   align-items: flex-start;
   gap: 70px;
@@ -43,4 +43,89 @@
   flex-direction: column;
   gap: 20px;
   list-style: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .info__person {
+    max-width: 450px;
+    gap: 40px;
+  }
+
+  .info__photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .info__name {
+    font-size: 32px;
+  }
+
+  .info__description {
+    font-size: 20px;
+  }
+
+  .info__stack {
+    max-width: 450px;
+    margin: 30px 0;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .info {
+    display: flex;
+    gap: 30px;
+  }
+
+  .info__stack {
+    margin: 30px 0 0;
+  }
+
+  .info__contacts {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .info__contacts {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .info {
+    padding: 0 10px;
+  }
+
+  .info__person {
+    gap: 20px;
+  }
+
+  .info__photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .info__name {
+    max-width: 200px;
+    font-size: 20px;
+  }
+
+  .info__description {
+    font-size: 14px;
+  }
+
+  .info__stack {
+    margin: 20px 0 0;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .info__contacts {
+    gap: 14px;
+  }
 }

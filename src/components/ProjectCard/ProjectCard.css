@@ -85,3 +85,46 @@
   gap: 6px;
   list-style: none;
 }
+
+@media screen and (max-width: 1279px) {
+  .project-card {
+    width: 450px;
+  }
+
+  .project-card__image {
+    width: 450px;
+    height: 253px;
+  }
+
+  .project-card__cover {
+    height: 253px;
+  }
+
+  .project-card__thumb {
+    height: 261px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .project-card {
+    width: 320px;
+    justify-self: center;
+  }
+
+  .project-card:nth-child(2n) {
+    justify-self: center;
+  }
+
+  .project-card__image {
+    width: 320px;
+    height: 180px;
+  }
+
+  .project-card__cover {
+    height: 180px;
+  }
+
+  .project-card__thumb {
+    height: 188px;
+  }
+}

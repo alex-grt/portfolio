@@ -24,3 +24,14 @@
   font-weight: 700;
   line-height: 1.2;
 }
+
+@media screen and (max-width: 479px) {
+  .contact-link {
+    border-radius: 15px;
+  }
+
+  .contact {
+    height: 30px;
+    border-radius: 15px;
+  }
+}

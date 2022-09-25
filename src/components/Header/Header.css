@@ -2,3 +2,9 @@
   max-width: 1280px;
   height: 80px;
 }
+
+@media screen and (max-width: 479px) {
+  .header {
+    height: 40px;
+  }
+}
