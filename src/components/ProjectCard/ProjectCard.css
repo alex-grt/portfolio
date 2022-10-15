@@ -63,6 +63,7 @@
   left: calc(50% - 2px);
   z-index: 2;
   background-color: #909c96;
+  touch-action: none;
 }
 
 .project-card__thumb:hover {

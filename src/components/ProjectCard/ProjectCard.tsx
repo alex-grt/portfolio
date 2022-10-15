@@ -1,5 +1,5 @@
 import './ProjectCard.css';
-import { FC, MouseEvent, useRef } from 'react';
+import { FC, useRef } from 'react';
 import { IProjectData, IScreenshot } from '../../utils/types';
 import StackItem from '../StackItem/StackItem';
 
@@ -18,14 +18,15 @@ const ProjectCard: FC<IProjectCardProps> = ({
   const coverRef = useRef<HTMLDivElement>(null);
   const thumbRef = useRef<HTMLDivElement>(null);
 
-  function moveThumb(evt: MouseEvent) {
+  function moveThumb(evt: any) {
     evt.preventDefault();
     if (!thumbRef.current) return;
 
     const shiftX = evt.clientX - thumbRef.current.getBoundingClientRect().left;
 
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp);
+    thumbRef.current.setPointerCapture(evt.pointerId);
+    thumbRef.current.addEventListener('pointermove', onMouseMove);
+    thumbRef.current.addEventListener('pointerup', onMouseUp);
 
     function onMouseMove(evt: any) {
       if (!cardRef.current) return;
@@ -50,8 +51,10 @@ const ProjectCard: FC<IProjectCardProps> = ({
     };
 
     function onMouseUp() {
-      document.removeEventListener('mouseup', onMouseUp);
-      document.removeEventListener('mousemove', onMouseMove);
+      if (!thumbRef.current) return;
+
+      thumbRef.current.removeEventListener('pointerup', onMouseUp);
+      thumbRef.current.removeEventListener('pointermove', onMouseMove);
     };
   };
 
@@ -106,7 +109,7 @@ const ProjectCard: FC<IProjectCardProps> = ({
           <div
             className="project-card__thumb"
             ref={thumbRef}
-            onMouseDown={moveThumb}
+            onPointerDown={moveThumb}
             onDoubleClick={doubleClick}
           />
           <h2 className="project-card__name">{data.name}</h2>
@@ -151,7 +154,7 @@ const ProjectCard: FC<IProjectCardProps> = ({
           <div
             className="project-card__thumb"
             ref={thumbRef}
-            onMouseDown={moveThumb}
+            onPointerDown={moveThumb}
             onDoubleClick={doubleClick}
           />
           <h2 className="project-card__name">{data.name}</h2>
