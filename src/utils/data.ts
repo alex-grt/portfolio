@@ -1,6 +1,7 @@
 import { IContact, IProjectData } from './types';
 import imageCode from '../images/code.jpg';
 import portfolio from '../images/portfolio.jpg';
+import currencyConverter from '../images/currency-converter.jpg';
 import stellarBurgers from '../images/stellar-burgers.jpg';
 import moviesExplorer from '../images/movies-explorer.jpg';
 import mesto from '../images/mesto.jpg';
@@ -57,7 +58,22 @@ export const portfolioData: IProjectData = {
 
 export const projectsData: IProjectData[] = [
   {
-    index: 2,
+    index: 6,
+    name: 'Конвертер валют',
+    stack: [
+      'React',
+      'Redux',
+      'TypeScript',
+      'HTML',
+      'CSS'
+    ],
+    link: 'https://alex-grt.github.io/currency-converter/',
+    image: currencyConverter,
+    linkCode: 'https://github.com/alex-grt/currency-converter',
+    imageCode: imageCode
+  },
+  {
+    index: 5,
     name: 'Звёздные бургеры',
     stack: [
       'React',
@@ -76,7 +92,7 @@ export const projectsData: IProjectData[] = [
     imageCode: imageCode
   },
   {
-    index: 3,
+    index: 4,
     name: 'Movies Explorer',
     stack: [
       'React',
@@ -121,7 +137,7 @@ export const projectsData: IProjectData[] = [
     ]
   },
   {
-    index: 4,
+    index: 3,
     name: 'Место',
     stack: [
       'React',
@@ -135,7 +151,7 @@ export const projectsData: IProjectData[] = [
     imageCode: imageCode
   },
   {
-    index: 5,
+    index: 2,
     name: 'Путешествия по России',
     stack: [
       'HTML',
